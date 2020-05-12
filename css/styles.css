@@ -1,0 +1,298 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lily Script One";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lily Script One"), local("LilyScriptOne-Regular"),
+    url("../fonts/lily-script-one-v7-latin-regular.woff2") format("woff2"),
+    url("../fonts/lily-script-one-v7-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Merriweather Regular"), local("Merriweather-Regular"),
+    url("../fonts/merriweather-v21-latin-regular.woff2") format("woff2"),
+    url("../fonts/merriweather-v21-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/roboto-slab-v11-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-slab-v11-latin-regular.woff") format("woff");
+}
+
+html {
+  font-size: 14px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  margin-bottom: 110px;
+}
+
+.navigation {
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+
+.logo {
+  font-size: 1.857rem;
+  letter-spacing: 1px;
+  color: #fed136;
+  font-family: "Lily Script One";
+}
+
+.menu {
+  display: flex;
+  width: 480px;
+  justify-content: space-between;
+}
+
+.navigation a {
+  vertical-align: baseline;
+}
+
+.menu-link {
+  font-size: 1rem;
+  line-height: 41px;
+  color: #222222;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.services-section {
+  width: 940px;
+  margin: 0px auto;
+}
+
+.sevices-title {
+  font-family: "Montserrat";
+  font-size: 2.857rem;
+  letter-spacing: -1px;
+  line-height: 100%;
+  color: #222222;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.services-description {
+  display: block;
+  font-size: 1.142rem;
+  color: #777777;
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.services-item-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-item {
+  width: 290px;
+}
+
+.service-subtitle {
+  font-size: 1.285rem;
+  letter-spacing: 0px;
+  color: #222222;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-annotation {
+  font-size: 1rem;
+  letter-spacing: 0px;
+  color: #777777;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.service-subtitle::before {
+  content: "";
+  display: block;
+  margin: 0px auto;
+  width: 70px;
+  height: 70px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 3px solid #fed136;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.basket::before {
+  background-image: url("../img/icon/Icon-Basket.png");
+}
+
+.laptop::before {
+  background-image: url("../img/icon/Icon-Laptop.png");
+}
+
+.security::before {
+  background-image: url("../img/icon/Icon-Locked.png");
+}
+
+.form-section {
+  background-color: #222222;
+  background-image: url(../img/map-image.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 675px;
+}
+
+.form-title {
+  font-size: 2.857rem;
+  letter-spacing: -1px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  padding-top: 110px;
+  margin-bottom: 25px;
+}
+
+.form-description {
+  display: block;
+  font-size: 1.142rem;
+  color: #777777;
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 75px;
+}
+
+.form {
+  height: 310px;
+  width: 940px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.form input:not(.btn),
+#message {
+  margin-bottom: 30px;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  font-size: 1rem;
+  letter-spacing: 0px;
+  color: #222222;
+  font-family: "Montserrat";
+  font-weight: 700;
+  padding-left: 20px;
+  border-radius: 2px;
+}
+
+.name {
+  width: 455px;
+  height: 50px;
+}
+
+.email {
+  width: 455px;
+  height: 50px;
+}
+
+.subject {
+  width: 455px;
+  height: 50px;
+}
+
+#message {
+  resize: none;
+  width: 455px;
+  height: 210px;
+  outline: none;
+  padding-top: 14px;
+  border-radius: 3px;
+}
+.btn {
+  width: 240px;
+  height: 65px;
+  position: relative;
+  left: -135px;
+  font-size: 1.285rem;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  border-radius: 3px;
+  background-color: #fed136;
+}
+
+.form input:required:focus {
+  outline: none;
+}
+
+.form input:required:focus:valid:not(:placeholder-shown) {
+  border: 1px solid green;
+}
+
+.form input:required:focus:invalid:not(:placeholder-shown) {
+  border: 1px solid red;
+}
+
+#message:focus:valid:not(:placeholder-shown) {
+  border: 1px solid green;
+}
+#message:focus:invalid:not(:placeholder-shown) {
+  border: 1px solid red;
+}
+*::placeholder {
+  font-size: 1rem;
+  letter-spacing: 0px;
+  color: #bbbbbb;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
